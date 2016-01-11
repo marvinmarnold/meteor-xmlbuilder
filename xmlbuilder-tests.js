@@ -18,6 +18,7 @@ if(Meteor.isServer){
       noDoubleEncoding: false,
     });
 
+    console.log(xml.end());
     test.equal(xml.end(), '<?xml version="1.0" encoding="UTF-8"?><command name="login"><param type="string">username</param><param type="string">password</param></command>');
   });
 }
